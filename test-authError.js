@@ -81,7 +81,7 @@ describe('Testing Issues', function () {
           .send('response_type=code')
           .send('redirect_uri=http://127.0.0.1:8080/cb')
           .send('scope=openid')
-        // .expect(401)
+          .expect(401)
         .expect(( response ) => {
           console.log(response)
         })

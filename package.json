@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "mocha": "mocha test-*.js",
     "test": "npm run --silent mocha",
-    "test-auth": "npm run --silent mocha test-authError.js",
-    "test-responseType": "npm run --silent mocha test-responseType.js"
+    "test-auth": "mocha test-authError.js",
+    "test-responseType": "mocha test-responseType.js"
   },
   "author": "",
   "license": "ISC",
