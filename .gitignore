@@ -1,0 +1,8 @@
+node_modules
+.vscode/
+coverage/
+.nyc_output/
+.secrets/
+*.code-workspace
+.npmrc
+package-lock.json

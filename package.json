@@ -1,0 +1,29 @@
+{
+  "name": "issuestest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mocha": "mocha test-*.js",
+    "test": "npm run --silent mocha",
+    "test-auth": "npm run --silent mocha test-authError.js",
+    "test-responseType": "npm run --silent mocha test-responseType.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jose": "^1.10.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.10.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-helmet": "^5.2.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "oidc-provider": "v6.12.11",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.1",
+    "supertest": "^4.0.2"
+  }
+}
