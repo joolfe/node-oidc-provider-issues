@@ -65,7 +65,7 @@ describe('Testing Issues', function () {
         this.server.close(cb)
     })
 
-    it('should fail with 401 because of invalid jwt token', function () {
+    it('should fail with "invalida_client" because of invalid jwt token', function () {
         
       const jwtSec = jwtSign({
         aud: 'https://op.example.com',
@@ -81,15 +81,8 @@ describe('Testing Issues', function () {
           .send('response_type=code')
           .send('redirect_uri=http://127.0.0.1:8080/cb')
           .send('scope=openid')
-          .expect(401)
-        .expect(( response ) => {
-          console.log(response)
+          .expect(400, { error: "invalid_client", error_description: "subject of client_assertion must be the same as client_id provided in the body"})
+  
         })
-      })
 })
-
-/*
-    When incorrect jwt format as for exmaple one claim is missing should return a 401 error not a 400.
-    In function findClientId is only returning 400 errors but sme errors are auth fails.
-*/
 
