@@ -19,5 +19,6 @@ There are the next test:
 - "test-responseType" corresponding with issue [558](https://github.com/panva/node-oidc-provider/issues/558)
 - "test-auth" corresponding with issue [559](https://github.com/panva/node-oidc-provider/issues/559)
 - "test-logoutNoSession" corresponding with issue [566](https://github.com/panva/node-oidc-provider/issues/566)
+- "test-requiredOAuthParams" corresponding with issue [577](https://github.com/panva/node-oidc-provider/issues/577)
 
 
