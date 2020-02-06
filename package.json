@@ -8,9 +8,12 @@
     "test-auth": "mocha test-authError.js",
     "test-responseType": "mocha test-responseType.js",
     "test-logoutNoSession": "mocha test-logoutNoSession.js",
-    "test-requiredOAuthParams": "mocha test-requiredOAuthParams.js"
+    "test-requiredOAuthParams": "mocha test-requiredOAuthParams.js",
+    "test-autoConsent": "mocha test-autoConsent.js",
+    "test-dinamicRegistration": "mocha test-dinamicRegistration.js",
+    "test-redirectUriRequired": "mocha test-redirectUriRequired.js"
   },
-  "author": "",
+  "author": "Jorge",
   "license": "ISC",
   "dependencies": {
     "jose": "^1.12.0",
@@ -20,7 +23,7 @@
     "koa-helmet": "^5.2.0",
     "koa-mount": "^4.0.0",
     "koa-router": "^7.4.0",
-    "oidc-provider": "v6.14.2",
+    "oidc-provider": "v6.20.1",
     "path": "^0.12.7"
   },
   "devDependencies": {
